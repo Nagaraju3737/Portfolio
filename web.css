@@ -296,6 +296,24 @@ img {
   border-radius: 0.5rem;
 }
 
+.imagebox,
+.otherimages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.imagebox img,
+.otherimages img {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  margin-left: 0 !important;
+}
+
 /* ===== PROJECT WORK =====*/
 .work__container {
   row-gap: 2rem;
@@ -488,20 +506,16 @@ textarea {
   .home__img {
     width: 450px;
   }
-    .imagebox{
-    display: flex;
-  gap: 10px;
-  }
-  .imagebox img {
-  width: 200px;
-  height: auto;
-}
-  .otherimages{
-    display: flex;
-  gap: 10px;
-  }
+  .imagebox,
   .otherimages {
-  width: 200px;
-  height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .imagebox img,
+  .otherimages img {
+    width: 160px;
+    height: auto;
   }
 }
