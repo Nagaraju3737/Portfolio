@@ -70,6 +70,39 @@ img {
   display: block;
 }
 
+/*===== THEME =====*/
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+body.dark-mode .l-header {
+  background-color: #000;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+body.dark-mode .nav__logo,
+body.dark-mode .nav__toggle,
+body.dark-mode .nav__link,
+body.dark-mode .home__social-icon {
+  color: #fff;
+}
+body.dark-mode .nav__menu {
+  background-color: #000;
+}
+body.dark-mode .contact__input,
+body.dark-mode textarea {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+body.dark-mode .footer {
+  background-color: #000;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+body.dark-mode .footer__icon {
+  color: #fff;
+}
+
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
@@ -160,6 +193,21 @@ img {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--second-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 0.75rem;
+}
+body.dark-mode .theme-toggle {
+  color: #fff;
 }
 
 /*Active menu*/

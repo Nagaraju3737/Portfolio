@@ -11,6 +11,18 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+/*==================== DARK MODE TOGGLE ====================*/
+const themeToggle = document.getElementById('theme-toggle')
+const themeIcon = document.getElementById('theme-icon')
+
+if (themeToggle && themeIcon) {
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode')
+        themeIcon.classList.toggle('bx-moon')
+        themeIcon.classList.toggle('bx-sun')
+    })
+}
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
